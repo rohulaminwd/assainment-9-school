@@ -7,7 +7,7 @@ const Review = () => {
     const [reviews, setReview] = useReviews();
     return (
         <div>
-            <h1 className='text-center fw-bold my-4'>Students Reviews</h1>
+            <h1 className='text-center fw-bold my-4'><span className='text-primary'>Students</span> Reviews</h1>
             <div className="container Review-container my-4">
                 {
                     reviews.map(review => <StudentReview

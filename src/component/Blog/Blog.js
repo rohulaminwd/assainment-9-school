@@ -4,7 +4,7 @@ import "./Blog.css"
 const Blog = () => {
     return (
         <div className='container'>
-            <h1 className='text-center fw-bold my-5'>Question and Answer</h1>
+            <h1 className='text-center fw-bold my-5'><span className='text-danger'>Question </span> and <span className='text-success'>Answer</span></h1>
             <div className="row g-3">
                 <div className="col-md-6">
                     <div className="p-3 bg-primary bg-opacity-10 answer rounded-3">

@@ -25,7 +25,7 @@ const Home = () => {
             </div>
         </div>
         <div className="text-center my-5">
-            <h1 text-center>Students Reviews</h1>
+            <h1 className="fw-bold"><span className="text-success">Students</span> Reviews</h1>
                 <div className="container Review-container my-4">
                     {
                         reviews.slice(0, 3).map(review => <StudentReview

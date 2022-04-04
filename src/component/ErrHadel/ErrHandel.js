@@ -1,10 +1,14 @@
 import React from 'react';
 import "./errHandel.css"
+import NotFound from "../../asset/images/NotFound.jpg"
 
 const ErrHandel = () => {
     return (
-        <div>
-            <h1>page not found 404 err</h1>
+        <div className='text-center container'>
+            <div className="w-75 mx-auto">
+                <h1 className='text-danger fw-bold my-5'>page not found 404 Error</h1>
+                <img src={NotFound} className="img-fluid" alt="" />
+            </div>
         </div>
     );
 };
