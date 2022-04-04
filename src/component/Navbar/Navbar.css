@@ -23,3 +23,17 @@ nav{
 .active-link{
     background-color: #dddfdf;
 }
+
+
+@media screen and (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }
+    .link{
+        font-size: 14px;
+        margin: 0px;
+    }
+  }
