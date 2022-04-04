@@ -2,6 +2,7 @@ import "./home.css"
 import Banner from '../../asset/images/course-1-3.png'
 import useReviews from '../../Hooks/useReviews'
 import StudentReview from './StudentReview';
+import { Link } from "react-router-dom";
 
 const Home = () => {
     const [reviews, setReview] = useReviews()
@@ -11,8 +12,8 @@ const Home = () => {
             <div className='container my-4'>
                 <div className="row d-flex align-items-center justify-content-between">
                     <div className="col-md-6 order-1">
-                        <h1 className='display-5 fw-bold'>SCHOOL MANAGEMENT</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, fugiat dicta consectetur, necessitatibus consequatur nobis nulla consequuntur exercitationem tenetur modi aspernatur doloribus repellat in maiores sit assumenda expedita cumque soluta.</p>
+                        <h1 className='display-5 fw-bold'><span className="text-success">SCHOOL</span> <span className="text-primary">MANAGEMENT</span></h1>
+                        <p>School management is defined as the process of planning, organizing, directing and controlling the activities of an institution utilizing human and material resources so as to effectively and efficiently accomplish the function of teaching, extension work and research.</p>
                         <button className='btn btn-outline-success fs-5 border-2 fw-bold rounded-pill px-5'>Over view</button>
                     </div>
                     <div className="col-md-6 order-md-2">
@@ -33,7 +34,10 @@ const Home = () => {
                         ></StudentReview>)
                     }
                 </div>
-            <button className='btn btn-primary fw-bold mx-auto'>Show more</button>
+                <Link className="link" to="/review">
+                    <button className='btn btn-primary fw-bold mx-auto'>Show More</button>
+                </Link>
+            
         </div>
         </>
     );
